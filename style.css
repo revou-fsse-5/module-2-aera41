@@ -1,0 +1,448 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins as the primary font */
+    margin: 0;
+}
+
+section h2 {
+  font-weight: bold; /* Matches Poppins Bold weight */
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #333333;
+  color: white;
+}
+
+.dark-mode > nav {
+  background-color: #333333;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.dark-mode > nav a {
+  color: white;
+}
+
+section {
+  margin: 0 16px;
+}
+
+section.full-screen {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  border-bottom: 2px solid #222222;
+  z-index: 99999;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+}
+
+nav > #dark-mode-switch {
+  display: flex;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+nav > #dark-mode-switch > p {
+  margin-right: 8px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > span > img {
+  height: 32px;
+  width: auto;
+  padding: 8px;
+}
+
+nav > span {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: #222222;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  background-image: url("img/Bunda_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+nav .circle-red {
+  font-size: 8px;
+  background-color: red;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: -8px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.relative-container {
+  position: relative;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 16px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  text-shadow: 2px 2px #03A9F4;
+}
+
+header p {
+  margin: 0;
+  text-shadow: 2px 2px #222222;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+#section-video .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bunda-facts .flex-container figure {
+  text-align: center;
+}
+
+#bunda-photos .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  grid-auto-rows: 240px 240px 240px;
+}
+
+#bunda-photos .grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container #item-1 {
+  grid-column: 1 / 2 span;
+  grid-row: 1;
+}
+
+fieldset {
+  margin: 16px 0;
+  border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: block;
+}
+
+input[type="date"] {
+  margin: 8px 0;
+  display: block;
+}
+
+#form-section {
+  background-color: #333333;
+  color: white;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+#form-section form {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bunda-photo-item {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.bunda-photo-item:hover {
+  filter: none;
+  transition-property: filter;
+  transition-duration: 1s;
+}
+
+/* for tablet and desktop */
+@media only screen and (min-width: 768px) {
+  #bunda-facts > .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #bunda-facts > .flex-container figure {
+    margin-left: auto;
+  }
+
+  #bunda-facts > .flex-container figure img {
+    height: 400px;
+  }
+
+  #bunda-facts > .flex-container figcaption {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  #bunda-facts > .flex-container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #bunda-facts > .flex-container.row-reverse p {
+    margin-left: 32px;
+  }
+
+  #bunda-facts > .flex-container.row-reverse figure {
+    margin-left: 40px;
+    min-width: 320px;
+  }
+
+  iframe {
+    max-width: 480px;
+  }
+
+  #bunda-photos .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: 320px 320px;
+  }
+
+  #bunda-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-container #item-1 {
+    grid-column: 1;
+    grid-row: 1 / 2 span;
+  }
+
+  .grid-container #item-2 {
+    grid-row: 1;
+    grid-column: 2 / 3 span;
+  }
+}

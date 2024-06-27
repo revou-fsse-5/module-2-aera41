@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Website Resmi Bunda PAUD Kota Surabaya"
+    />
+    <meta name="keywords" content="Education, Early Childhood, Surabaya, Bunda PAUD" />
+    <meta name="author" content="Pemerintah Kota Surabaya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Bunda PAUD Kota Surabaya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="img/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="mobile">
+        <img
+          src="img/Hamburger_icon.svg.png"
+          alt="Hamburger Icon"
+        />
+      </span>
+      <span class="relative-container">
+        <img
+          src="img/Logo.png"
+          alt="Logo Bunda PAUD"
+        />
+
+        <b>Web Bunda PAUD</b>
+      </span>
+
+      <span id="dark-mode-switch">
+        <p>Dark Mode</p>
+
+        <label class="switch">
+          <input
+            id="checkbox-dark-mode"
+            onchange="toggleDarkMode()"
+            type="checkbox"
+          />
+          <span class="slider round"></span>
+        </label>
+      </span>
+    </nav>
+    <header class="full-screen" id="header">
+      <h1>Profil Bunda PAUD Surabaya</h1>
+      <p>Welcome to the official page of Bunda PAUD Surabaya. Discover our programs, activities, and the impact we're making in early childhood education</p>
+    </header>
+    <main>
+  <section id="bunda-slideshow">
+ <h2>Slideshow Bunda PAUD</h2>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/Bunda-12.jpg" style="width:100%">
+    <div class="text">Bunda PAUD 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/Bunda-11.jpg" style="width:100%">
+    <div class="text">Bunda PAUD 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/Bunda-10.jpg" style="width:100%">
+    <div class="text">Bunda PAUD 3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/Bunda-9.jpg" style="width:100%">
+    <div class="text">Bunda PAUD 4</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</section>
+      
+      <section id="bunda-photos">
+        <h2>Foto Bunda PAUD</h2>
+        <div class="grid-container">
+          <div class="bunda-photo-item" id="item-1">
+            <img
+              src="img/Bunda-1.jpg"
+              alt="Bunda PAUD Bermain Bersama Anak-Anak."
+            />
+          </div>
+          <div class="bunda-photo-item" id="item-2">
+            <img
+              src="img/Bunda-3.jpg"
+              alt="Bunda PAUD Kota Surabaya bersama Bunda PAUD Kecamatan dan Kelurahan."
+            />
+          </div>
+          <div class="bunda-photo-item" id="item-3">
+            <img
+              src="img/Bunda-4.jpg"
+              alt="Bunda PAUD memberikan Imunisasi"
+            />
+          </div>
+          <div class="bunda-photo-item" id="item-4">
+            <img
+              src="img/Bunda-5.jpg"
+              alt="Bunda PAUD bersama anak SD"
+            />
+          </div>
+          <div class="bunda-photo-item" id="item-5">
+            <img
+              src="img/Bunda-6.jpg"
+              alt="Bunda PAUD menandatangani komitmen bersama"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="bunda-facts">
+        <h2>Fakta Terkait Bunda PAUD Surabaya</h2>
+        <div class="flex-container">
+          <ul>
+            <li>Bunda PAUD Kota Surabaya Merupakan Istri Walikota Surabaya yang sangat berdedikasi</li>
+            <li>Bunda PAUD Kota Surabaya Sangat Menyukai Anak-Anak</li>
+            <li>Bunda PAUD Kota Surabaya merupakan Bunda PAUD terbaik di Indonesia</li>
+
+          </ul>
+          <figure>
+            <picture>
+              <source
+                media="(max-width: 240px)"
+                srcset="img/Bunda-6"
+              />
+              <img
+                src="img/Bunda-6.jpg"
+                alt="Bunda PAUD memberikan Imunisasi."
+              />
+            </picture>
+
+            <figcaption> Bunda <em> Kota </em> Surabaya.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="section-video">
+        <h2>Video Profil Bunda PAUD Kota Surabaya</h2>
+        <div class="flex-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/O0PK97x9lkg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            display="block"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="form-section">
+        <h2>Informasi lebih lanjut bisa menghubungi kami</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="Nama Lengkap">Nama Lengkap:</label>
+              <input id="fullName" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <label for="Alamat">Alamat:</label>
+              <input id="Alamat" type="text" required />
+            </div>
+           <div>
+              <p>Apakah Anda Berdomisili di Surabaya?</p>
+              <input type="radio" id="yes" name="isSurabaya" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isSurabaya" value="Female" />
+              <label for="no">No</label>
+            </div>
+            <div>
+              <label for="Tanggal Lahir">Tanggal Lahir</label>
+              <input
+                type="date"
+                id="Tanggal Lahir"
+                name="trip-start"
+                value="1960-05-21"
+              />
+            </div> 
+            <div>
+              <label for="No HP">No HP:</label>
+              <input id="No HP" type="number" required />
+            </div> 
+
+          </fieldset>
+          <fieldset>
+            <legend>Tambahan Informasi terkait Bunda PAUD</legend>
+            <div>
+              <p>Apa yang anda pikirkan terkait Bunda PAUD Surabaya?</p>
+              <input
+                id="figur inspiratif dan motivator"
+                type="checkbox"
+                name="figur inspiratif dan motivator"
+                value="figur inspiratif dan motivator"
+              />
+              <label for="figur inspiratif dan motivator">figur inspiratif dan motivator</label>
+              <input
+                id="penggerak program dan kebijakan"
+                type="checkbox"
+                name="penggerak program dan kebijakan"
+                value="penggerak program dan kebijakan"
+              />
+              <label for="penggerak program dan kebijakan">penggerak program dan kebijakan</label>
+              <input
+                id="Peduli dan berpihak pada anak"
+                type="checkbox"
+                name="Peduli dan berpihak pada anak"
+                value="Peduli dan berpihak pada anak"
+              />
+              <label for="Peduli dan berpihak pada anak">Peduli dan berpihak pada anak</label>
+            </div>
+            <div>
+              <p>Ceritakan Pengalaman Anda Terkait Bunda PAUD Surabaya!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Upload Foto Terbaik Anda bersama Bunda PAUD Surabaya</p>
+              <input
+                type="file"
+                id="photo"
+                name="myPaudPhoto"
+                required
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+
+    <script>
+      // initial state
+      if (localStorage.getItem("darkMode") === "true") {
+        document.getElementById("checkbox-dark-mode").checked = true;
+        document.body.classList.add("dark-mode");
+      }
+
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        if (!document.getElementById("checkbox-dark-mode").checked) {
+          localStorage.setItem("darkMode", false);
+        } else {
+          localStorage.setItem("darkMode", true);
+        }
+      }
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+  </body>
+</html>
